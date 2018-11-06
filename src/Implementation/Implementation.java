@@ -11,6 +11,13 @@ class Student{
 
 public class Implementation {
 
+    public static void printStudents(Student[] stu){
+        for(Student st:stu ){
+            System.out.println("Roll No :"+st.roll_no+" Name :"+st.name);
+        }
+        System.out.println("Hello");
+    }
+
     public static  void main(String[] args){
         Student[] stu = new Student[5];
         stu[0] = new Student(1,"Ajay1");
@@ -18,10 +25,7 @@ public class Implementation {
         stu[2] = new Student(3,"Ajay3");
         stu[3] = new Student(4,"Ajay4");
         stu[4] = new Student(5,"Ajay5");
-
-        for(int i =0; i<stu.length;i++ ){
-            System.out.println("Roll No :"+stu[i].roll_no+" Name :"+stu[i].name);
-        }
+        printStudents(stu);
 
     }
 }
