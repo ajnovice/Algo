@@ -14,14 +14,18 @@ public class Pangram {
         }
         if (set.size() == 26) {
             System.out.println("It's a Pangram");
-        } else {
-            System.out.println("It's not a Pangram");
+        }
+        else if(set.size() == 25){
+            System.out.println("It's Pangrammatic Lipogram");
+        }
+        else {
+            System.out.println("It's not a Pangram but might be lipogram");
         }
     }
 
     public static void main(String[] args) {
-        String s1 = new String("The quick brown fox jumps over the lazy dog");
-        String s2 = new String("The quick brown fox jumps over the dog");
+        String s1 = new String("The quick brown fox jumped over the lazy dog");
+        String s2 = new String("The quick brown fox jumps over the lazy dog");
         CheckPangram(s1);
         CheckPangram(s2);
     }
