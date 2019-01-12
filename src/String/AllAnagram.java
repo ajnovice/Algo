@@ -21,9 +21,9 @@ public class AllAnagram {
                 mp.put(Arrays.hashCode(charword),vec);
             }
         }
-        for (Map.Entry<Integer,Vector<String>> entry:mp.entrySet()){
+        for (Map.Entry<Integer,Vector<String>> entry:mp.entrySet()) {
             Iterator<String> itr = entry.getValue().iterator();
-            while (itr.hasNext()){
+            while (itr.hasNext()) {
                 System.out.println(itr.next());
             }
         }
