@@ -16,7 +16,7 @@ public class FindLongestPalindromicSubString {
                 size=2;
             }
         }
-        for(int gap=3;gap<=n;gap++){
+        for(int gap=3;gap<n;gap++){
             for(int i=0;i<n-gap+1;i++){
                 int j=i+gap-1;
                 if(str.charAt(i) == str.charAt(j) && dp[i+1][j-1]){
