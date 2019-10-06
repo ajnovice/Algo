@@ -17,7 +17,7 @@ public class ArrangeAdjacentCharacter {
         }
     }
 
-    public static void arrange(String s1) {
+    private static void arrange(String s1) {
         Map<Character, Integer> mp = new HashMap<>();
         for (int i = 0; i < s1.length(); i++) {
             if (mp.containsKey(s1.charAt(i))) {
