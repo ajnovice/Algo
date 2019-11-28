@@ -37,11 +37,24 @@ public class Combine {
 
     public static void main(String[] args){
         List<String> k = new ArrayList<>();
-        k.add("I like bubblegum");
-        k.add("bubblegum that is pink");
-        k.add("hi, how are you today");
-        k.add("today on this fine day");
-        k.add("day that is sunny");
+//        k.add("mission statement");
+//        k.add("a quick bite to eat");
+//        k.add("a chip off the old block");
+//        k.add("cholocate bar");
+//        k.add("mission impossible");
+//        k.add("a man on a mission");
+//        k.add("block party");
+//        k.add("eat my words");
+//        k.add("bar of soap");
+        //////////////////////////
+//        k.add("writing code");
+//        k.add("code rocks");
+        /////////////////////
+//        k.add("I like bubblegum");
+//        k.add("bubblegum that is pink");
+//        k.add("hi, how are you today");
+//        k.add("today on this fine day");
+//        k.add("day that is sunny");
         System.out.println(combine(k));
     }
 }
